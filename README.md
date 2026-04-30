@@ -154,22 +154,65 @@ expect_column_values_to_be_in_set("payment_method", ["Credit Card", "Debit Card"
     <td align="center"><b>DAG Graph View</b></td>
   </tr>
   <tr>
-    <td><img src="images/dag_home.png" alt="DAG Home"/></td>
-    <td><img src="images/dag_graph.png" alt="DAG Graph"/></td>
+    <td><img src="images/dag/dag_home.png" alt="DAG Home"/></td>
+    <td><img src="images/dag/dag_graph.png" alt="DAG Graph"/></td>
   </tr>
   <tr>
     <td align="center"><b>DAG Grid Run History</b></td>
     <td align="center"><b>DAG Run Summary</b></td>
   </tr>
   <tr>
-    <td><img src="images/dag_grid.png" alt="DAG Grid"/></td>
-    <td><img src="images/dag_summary.png" alt="DAG Summary"/></td>
+    <td><img src="images/dag/dag_grid.png" alt="DAG Grid"/></td>
+    <td><img src="images/dag/dag_grid.png" alt="DAG Summary"/></td>
   </tr>
 </table>
 
 ---
 
-## 🚀 Local Setup
+## 📊 Kibana Dashboard Screenshots
+
+<table>
+  <tr>
+    <td align="center"><b>Introduction & Objective</b></td>
+    <td align="center"><b>Sales by Mall Location</b></td>
+  </tr>
+  <tr>
+    <td><img src="images/visualization/00_introduction_objective.png" alt="Introduction"/></td>
+    <td><img src="images/visualization/01_sales_by_mall.png" alt="Sales by Mall"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Sales by Category</b></td>
+    <td align="center"><b>Payment Method Distribution</b></td>
+  </tr>
+  <tr>
+    <td><img src="images/visualization/02_sales_by_category.png" alt="Sales by Category"/></td>
+    <td><img src="images/visualization/03_payment_method.png" alt="Payment Method"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Monthly Sales per Mall</b></td>
+    <td align="center"><b>Transactions by Age Group & Category</b></td>
+  </tr>
+  <tr>
+    <td><img src="images/visualization/04_monthly_sales_per_mall.png" alt="Monthly Sales"/></td>
+    <td><img src="images/visualization/05_transactions_age_category.png" alt="Transactions by Age"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Mall vs Category</b></td>
+    <td align="center"><b>Total Sales by Gender & Age Group</b></td>
+  </tr>
+  <tr>
+    <td><img src="images/visualization/06_mall_vs_category.png" alt="Mall vs Category"/></td>
+    <td><img src="images/visualization/07_sales_gender_age_group.png" alt="Sales by Gender"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><b>Conclusions & Business Recommendations</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="images/visualization/08_conclusions.png" alt="Conclusions"/></td>
+  </tr>
+</table>
+
+---
 
 > ⚠️ This project runs fully locally via Docker Compose. No cloud costs required.
 
@@ -282,10 +325,20 @@ retail-etl-pipeline/
 │       └── retail_transactions_clean.csv  ← Cleaned, pipeline-ready dataset
 │
 └── images/
-    ├── dag_home.png
-    ├── dag_graph.png
-    ├── dag_grid.png
-    └── dag_summary.png
+    ├── dag/
+    │   ├── dag_graph.png                    ← DAG graph view (task flow)
+    │   ├── dag_home.png                     ← Airflow home — DAG list
+    │   └── dag_grid.png                     ← DAG grid view with run summary
+    └── visualization/
+        ├── 00_introduction_objective.png    ← Dashboard intro & objectives
+        ├── 01_sales_by_mall.png             ← Sales by Shopping Mall Location
+        ├── 02_sales_by_category.png         ← Sales by Category
+        ├── 03_payment_method.png            ← Payment Method Distribution
+        ├── 04_monthly_sales_per_mall.png    ← Monthly Sales Performance per Mall
+        ├── 05_transactions_age_category.png ← Transactions by Age Group & Category
+        ├── 06_mall_vs_category.png          ← Sales Distribution: Mall vs Category
+        ├── 07_sales_gender_age_group.png    ← Total Sales by Gender & Age Group
+        └── 08_conclusions.png              ← Conclusions & Business Recommendations
 ```
 
 ---
